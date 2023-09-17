@@ -111,21 +111,75 @@
             We are going to create a form. </br> </br> 
             <form action="/action.php" method="post">
                 <label for="name">Name</label>
-                <input type="text" id="name"/>
+                <input type="text" id="name" placeholder="entrez votre nom"/>
+            
                 <br/> <br />
                 <label for="email">Email</label>
-                <input type="text" id="email"/>
+                <input type="text" id="email" placeholder="entrez votre email"/>
+
                 <br /> <br />
                 <label>Password:</label>
                 <input type="password" name="password" />
+
                 <br /><br />
                 <label>Birth Date:</label>
-                <input type="date" name="birthday" />
-                <button>Submit</button>
+                <input type="date" id="birthday" /> 
+                <br/> <br/>
+
+                <label for="age">Age</label>
+                <input type="number" id="Age" min="0" max="125" value="18" step="1"> 
+
+                </br> <br/>
+                <label for="members of familly">Members of familly</label>
+                <input type="number" id="memberes of familly" placeholder="choose the right number"><br/> <br/>
+
+                  <!-- exmple de input select -->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+            </select>
+                <br/> <br/>
+                <!-- input radio -->
+                Which one do you love the  most?
+                <div>
+                <input type="radio" name="type" id="reptile">
+                <label for="reptile">Reptile</label>
+
+                <input type="radio" name="type" id="dog">
+                <label for="dog">Dog</label>
+
+                <input type="radio" name="type" id="cat" checked>
+                <label for="cat">Cat</label>
+                </div> <br/>
+
+                tell us why? <br/>
+                <textarea cols="40" rows="6"></textarea>
+
+                <br/> </br>
+                <!-- insertion de checkbox -->
+                <label>
+                    <input name="terms" type="checkbox" value="tnc" />Accept terms
+                </label> <br/>
+                <label>
+                    <input type="checkbox"> do you agree
+                </label><br/>
+                <label>
+                    <input type="checkbox"> do you disagree
+                </label>
+
+            </br> </br>
+                <input type="submit" value="Submit here">
             </form>
         </div>
-    </section>
+    </section> <br/> <br/>
 <footer>
+<!-- mail de contact pour lutilisateur-->
+<a href="mailto: pgrdf@hotmail.com">contactez nous</a><br/> <br/> 
+<!-- comment faire telecharger un fichier a lutilisateur -->
+<a href="notice.txt" download="nom-du-fichier"> telecharger la notice</a>
+<br/> <br/>
+
     <!-- insertion de plusieurs icones pris dans le lien pour les icones plus haut -->
     <span> <big>&#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083; &#10083;</big>  </span>
 </footer>
